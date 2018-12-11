@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample FirebaseUI App</title>
+    <!-- *******************************************************************************************
+       * TODO(DEVELOPER): Paste the initialization snippet from:
+       * Firebase Console > Overview > Add Firebase to your web app. *
+       ***************************************************************************************** -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="all_css/styles.min.css" rel="stylesheet"  />
+    <link type="text/css" rel="stylesheet"   <link type="text/css" rel="stylesheet" href="all_css/firebaseui.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Font awesome -->
+      <link rel="stylesheet" href="all_css/font-awesome/4.4.0/fonts/css/font-awesome.min.css">
+
+      <link href='all_css/fonts.googleapis.com/cssda80.css?family=Work+Sans:400,600' rel='stylesheet' type='text/css'>
+
+
+      <link rel="stylesheet" href="all_css/blue.css">
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: '<url-to-redirect-to-on-success>',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+          firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+        ],
+        // tosUrl and privacyPolicyUrl accept either url string or a callback
+        // function.
+        // Terms of service url/callback.
+        tosUrl: '<your-tos-url>',
+        // Privacy policy url/callback.
+        privacyPolicyUrl: function() {
+          window.location.assign('<your-privacy-policy-url>');
+        }
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  </head>
+  <body>
+      <div class="login-box">
+        <div class="login-logo">
+          <img src="all_imgs/logo-sidename-1920px.png" style="height: 93px; width: 360px"  /> </div> <!-- /.login-logo -->
+          <div id="main">
+              <div id="user-signed-in" class="hidden">
+                <div id="user-info">
+                  <div id="photo-container">
+                    <img id="photo">
+                  </div>
+                  <div id="name"></div>
+                  <div id="email"></div>
+                  <div id="phone"></div>
+                  <div id="is-new-user"></div>
+                  <div class="clearfix"></div>
+                </div>
+                <p>
+                  <button id="sign-out">Sign Out</button>
+                  <button id="delete-account">Delete account</button>
+                </p>
+              </div>
+            <div class="login-box-body">
+              <p class="login-box-msg">Sign in to continue</p>
+              <div class="form-group has-feedback">
+                <input id="txtEmail" type="email" class="form-control" placeholder="Email">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+              </div>
+              <div class="form-group has-feedback">
+                <input id="txtPassword" type="password" class="form-control" placeholder="Password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+              </div>
+              <div class="row">
+                <div class="col-xs-8">
+                  <div class="checkbox icheck">
+                    <label>
+                      <input type="checkbox"> Remember Me
+                    </label>
+                  </div>
+                </div><!-- /.col -->
+                <div class="col-xs-4">
+                  <button id="btnLogin" class="btn btn-primary btn-block">Sign In</button>
+                  <button id="btnLogout" class="btn btn-primary btn-block hide">Log Out</button>
+                </div><!-- /.col -->
+              </div>
+
+              <div class="social-auth-links text-center">
+                <p class="text-muted">- OR -</p>
+                <a href="#" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
+                <a href="#" class="btn btn-block btn-social btn-google"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
+              </div><!-- /.social-auth-links -->
+
+              <div class="login-box-footer text-center">
+                <a href="#">Forgot password?</a>
+
+                <br>
+
+                <a href="signup.html" id="btnSignUp" class="text-center">Register for a new account &rarr;</a>
+
+                <br>
+
+                <a href="privacy.html" class="text-center" target="_blank">Privacy Policy</a>
+              </div>
+          </div><!-- /.login-box-body -->
+        </div><!-- /.login-box -->
+      </div>
+    <div id="firebaseui-auth-container"></div>
+  </body>
+</html>

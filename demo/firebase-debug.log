@@ -1,0 +1,87 @@
+[debug] [2018-10-25T07:49:48.188Z] ----------------------------------------------------------------------
+[debug] [2018-10-25T07:49:48.197Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-10-25T07:49:48.198Z] CLI Version:   5.0.1
+[debug] [2018-10-25T07:49:48.198Z] Platform:      darwin
+[debug] [2018-10-25T07:49:48.198Z] Node Version:  v8.12.0
+[debug] [2018-10-25T07:49:48.200Z] Time:          Thu Oct 25 2018 00:49:48 GMT-0700 (PDT)
+[debug] [2018-10-25T07:49:48.200Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-25T07:49:48.244Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-25T07:49:48.245Z] > authorizing via signed-in user
+[debug] [2018-10-25T07:49:48.246Z] [iam] checking project dcinsites for permissions ["firebase.projects.get"]
+[debug] [2018-10-25T07:49:48.252Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-25T07:49:48.253Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-25T07:49:49.098Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T07:49:49.132Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dcinsites:testIamPermissions  
+
+[debug] [2018-10-25T07:49:49.742Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T07:49:49.746Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dcinsites  
+ 
+[debug] [2018-10-25T07:49:50.221Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Darrell/Documents/demo'...
+[info] 
+[debug] [2018-10-25T07:49:50.227Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/856879523081/clients/_:getWebAppConfig  
+ 
+[debug] [2018-10-25T07:49:51.193Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2018-10-27T21:30:41.039Z] ----------------------------------------------------------------------
+[debug] [2018-10-27T21:30:41.042Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-10-27T21:30:41.043Z] CLI Version:   5.0.1
+[debug] [2018-10-27T21:30:41.043Z] Platform:      darwin
+[debug] [2018-10-27T21:30:41.043Z] Node Version:  v8.12.0
+[debug] [2018-10-27T21:30:41.045Z] Time:          Sat Oct 27 2018 14:30:41 GMT-0700 (PDT)
+[debug] [2018-10-27T21:30:41.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-27T21:30:41.062Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-27T21:30:41.062Z] > authorizing via signed-in user
+[debug] [2018-10-27T21:30:41.063Z] [iam] checking project dcinsites for permissions ["firebase.projects.get"]
+[debug] [2018-10-27T21:30:41.064Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-27T21:30:41.064Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-27T21:30:41.295Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-27T21:30:41.327Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dcinsites:testIamPermissions  
+
+[debug] [2018-10-27T21:30:41.582Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-27T21:30:41.584Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dcinsites  
+ 
+[debug] [2018-10-27T21:30:41.852Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Darrell/Documents/demo'...
+[info] 
+[debug] [2018-10-27T21:30:41.854Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/856879523081/clients/_:getWebAppConfig  
+ 
+[debug] [2018-10-27T21:30:42.095Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2018-12-09T08:01:46.342Z] ----------------------------------------------------------------------
+[debug] [2018-12-09T08:01:46.344Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-12-09T08:01:46.345Z] CLI Version:   6.1.1
+[debug] [2018-12-09T08:01:46.345Z] Platform:      darwin
+[debug] [2018-12-09T08:01:46.345Z] Node Version:  v8.12.0
+[debug] [2018-12-09T08:01:46.346Z] Time:          Sun Dec 09 2018 00:01:46 GMT-0800 (PST)
+[debug] [2018-12-09T08:01:46.346Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-09T08:01:46.364Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-09T08:01:46.365Z] > authorizing via signed-in user
+[debug] [2018-12-09T08:01:46.365Z] [iam] checking project dcinsites for permissions ["firebase.projects.get"]
+[debug] [2018-12-09T08:01:46.366Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-09T08:01:46.367Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-09T08:01:46.786Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-09T08:01:46.804Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dcinsites:testIamPermissions  
+
+[debug] [2018-12-09T08:01:47.373Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-09T08:01:47.375Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/dcinsites  
+ 
+[debug] [2018-12-09T08:01:48.549Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Darrell/Documents/GitHub/dci_website/demo'...
+[info] 
+[debug] [2018-12-09T08:01:48.552Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/856879523081/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-09T08:01:49.508Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
